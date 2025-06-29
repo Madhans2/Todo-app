@@ -8,7 +8,7 @@ function Profile() {
       try {
         const token = localStorage.getItem("token"); // You should store token after login
 
-        const res = await fetch("http://localhost:5000/api/user/profile", {
+        const res = await fetch("https://todo-app-9dt4.onrender.com/api/user/profile", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

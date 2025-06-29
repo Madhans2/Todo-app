@@ -17,8 +17,9 @@ export default function TaskCard({
 }) {
   const handleShare = () => {
     const subject = encodeURIComponent(`Task Shared: ${title}`);
+    const shareLink = `${window.location.origin}/task/${id}`;
     const body = encodeURIComponent(
-      `Hey, check out this task:\n\n${title}\n${description}\n\nOpen here: http://localhost:5173/task/${id}`
+      `Hey, check out this task:\n\n${title}\n${description}\n\nOpen here: ${shareLink}`
     );
     window.open(
       `https://mail.google.com/mail/?view=cm&fs=1&to=&su=${subject}&body=${body}`,

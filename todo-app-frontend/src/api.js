@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// ✅ Set base URL for API
-const API = axios.create({ baseURL: "http://localhost:5000/api" });
+// ✅ Set base URL for Render-deployed backend
+const API = axios.create({ baseURL: "https://todo-app-9dt4.onrender.com/api" });
 
 // ✅ Helper to get user email from localStorage
 const getUserEmail = () => localStorage.getItem("userEmail");

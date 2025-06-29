@@ -1,12 +1,11 @@
 // src/pages/Reminders.jsx
-
 import { useEffect, useState } from "react";
 
 export default function Reminders() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/tasks/reminders") // Example endpoint
+    fetch("https://todo-app-9dt4.onrender.com/api/tasks/reminders") // ✅ Deployed backend
       .then((res) => res.json())
       .then((data) => setTasks(data.tasks))
       .catch((err) => console.error("Error loading reminders", err));

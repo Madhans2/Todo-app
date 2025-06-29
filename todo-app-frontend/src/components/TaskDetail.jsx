@@ -11,7 +11,7 @@ export default function TaskDetail() {
   useEffect(() => {
     const loadTask = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/tasks/${id}`);
+        const res = await axios.get(`https://todo-app-9dt4.onrender.com/api/tasks/${id}`);
         setTask(res.data);
       } catch (err) {
         console.error("Failed to fetch task:", err);
@@ -30,7 +30,7 @@ export default function TaskDetail() {
     <div className="p-6 max-w-xl mx-auto">
       <h1 className="text-3xl font-bold text-gray-800">{task.title}</h1>
       <p className="mt-2 text-gray-600">{task.description}</p>
-      <p className="mt-4 text-sm text-gray-400">Due Date: {task.dueDate}</p>
+      <p className="mt-4 text-sm text-gray-400">Due Date: {task.dueDate || "N/A"}</p>
       {task.sharedWith?.length > 0 && (
         <p className="mt-2 text-sm text-blue-500">
           Shared with: {task.sharedWith.join(", ")}

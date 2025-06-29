@@ -8,7 +8,7 @@ function PrivateNotes() {
       const token = localStorage.getItem("token");
 
       try {
-        const res = await fetch("http://localhost:5000/api/notes/private", {
+        const res = await fetch("https://todo-app-9dt4.onrender.com/api/notes/private", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

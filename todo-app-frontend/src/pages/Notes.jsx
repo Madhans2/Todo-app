@@ -9,7 +9,7 @@ export default function Notes() {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/notes?email=${userEmail}`);
+        const res = await fetch(`https://todo-app-9dt4.onrender.com/api/notes?email=${userEmail}`);
         const data = await res.json();
         setNotes(data.notes);
       } catch (err) {

@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { GoogleLogin } from "@react-oauth/google";
-import { jwtDecode } from "jwt-decode"; // ✅ Correct named import
+import { jwtDecode } from "jwt-decode";
 
 import image from "../images/login.jpg";
 
@@ -11,8 +11,8 @@ function Login() {
 		try {
 			const decoded = jwtDecode(credentialResponse.credential);
 
-			// Send token to backend
-			const res = await fetch("http://localhost:5000/api/auth/google", {
+			// ✅ Use Render backend instead of localhost
+			const res = await fetch("https://todo-app-9dt4.onrender.com/api/auth/google", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -23,14 +23,13 @@ function Login() {
 			const data = await res.json();
 
 			if (data.success) {
-				// Store token and basic user info
-				localStorage.setItem("token", data.token); // Optional: if your backend returns a token
+				localStorage.setItem("token", data.token); // Optional
 				localStorage.setItem("userEmail", data.user.email);
 				localStorage.setItem("userName", data.user.name);
 
 				navigate("/"); // Redirect to dashboard
 			} else {
-				alert("Login failed: " + data.message || "Unknown error");
+				alert("Login failed: " + (data.message || "Unknown error"));
 			}
 		} catch (error) {
 			console.error("Google login error", error);
