@@ -91,7 +91,9 @@ npm run dev
 ![Todo-Diagram](./docs/architecture.png)
 
 ## Project Demo
-[ Project Demo Video](https://drive.google.com/your_video_link)
+[ Project Demo Video]
+[Desktop View](https://drive.google.com/file/d/12_nlN7Fb0_pb5vBDdyEx1h-dHkBLUJO4/view?usp=drivesdk)
+[Mobile View](https://drive.google.com/file/d/13wqxjcgdGQHnRFLE7-dirRZi2rrJ0Pic/view?usp=drivesdk)
 
 
 
