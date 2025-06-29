@@ -43,8 +43,8 @@ git clone https://github.com/Madhans2/Todo.git
 
 after cloning, run the following commands
 ```bash
-cd todo-app
-cd backend
+cd todo-app-frontend
+cd todo-app-backend
 npm install
 npm start //nodemon
 ```
