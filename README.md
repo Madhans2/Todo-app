@@ -1,6 +1,6 @@
 # Todo Task Manager
 
-This is a full-stack [Todo Task}(https://github.com/Madhans2?tab=repositories)
+This is a full-stack [Todo Task](https://github.com/Madhans2?tab=repositories)
   Management Web Application that allows users to:
 
 - Sign in via social logins (**Google**)
