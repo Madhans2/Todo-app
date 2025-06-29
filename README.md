@@ -1,6 +1,6 @@
 # Todo Task Manager
 
-This is a full-stack [Todo Task](https://github.com/KishoreKumar0603)
+This is a full-stack [Todo Task]((https://github.com/Madhans2?tab=repositories))
   Management Web Application that allows users to:
 
 - Sign in via social logins (**Google**)
@@ -38,7 +38,7 @@ This is a full-stack [Todo Task](https://github.com/KishoreKumar0603)
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/KishoreKumar0603/Todo.git
+git clone https://github.com/Madhans2/Todo.git
 ```
 
 after cloning, run the following commands
