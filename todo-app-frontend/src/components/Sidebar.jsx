@@ -61,7 +61,7 @@ export default function Sidebar() {
             />
           </svg>
         </div>
-        <h1 className="text-xl font-bold text-gray-800">NotePlus</h1>
+        <h1 className="text-xl font-bold text-gray-800">NotePlus todo</h1>
       </div>
 
       <hr className="border-gray-300 mb-4" />
